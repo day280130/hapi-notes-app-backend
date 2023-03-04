@@ -66,7 +66,7 @@ const postNote: reqHandler = (req, h) => {
           noteId: id,
         },
       })
-      .code(200);
+      .code(201);
   }
 
   return h
