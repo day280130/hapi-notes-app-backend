@@ -5,11 +5,12 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
+    "start": "npm run build:clean && npm run prod",
     "dev": "npx ts-node-esm ./src/index.ts",
     "dev:watch": "nodemon",
     "prod": "node ./dist/src/index.js",
-    "build": "tsc -p tsconfig.prod.json",
-    "build:clean": "npx rimraf ./dist && tsc -p tsconfig.prod.json",
+    "build": "tsc",
+    "build:clean": "npx rimraf ./dist && tsc",
     "clean": "npx rimraf ./dist"
   },
   "author": "Dimas Adnan",
